@@ -7,4 +7,4 @@ try:
     for i in a:
         print(i)
 except ValueError:
-    print("Где-то ошибка наверное¯\_(ツ)_/¯")
+    print("Где-то ошибка наверное")

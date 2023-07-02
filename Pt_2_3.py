@@ -1,10 +1,10 @@
-def ArmstrongNum(x):
+def armstrongnum(x):
     xstr = str(x)
     n = len(xstr)
-    sum = 0
+    _sum = 0
     for i in xstr:
-        sum += int(i) ** n
-    if sum == x:
+        _sum += int(i) ** n
+    if _sum == x:
         return True
     return False
 
@@ -14,9 +14,9 @@ while True:
         a = int(input("Введите натуральное число "))
         if a < 0:
             raise ValueError
-        elif ArmstrongNum(a):
+        elif armstrongnum(a):
             print(f"Число {a} является числом армрстронга\n")
         else:
             print(f"Число {a} не является числом армрстронга\n")
     except ValueError:
-        print("Где-то ошибка наверное¯\_(ツ)_/¯\n")
+        print("Где-то ошибка наверное\n")
