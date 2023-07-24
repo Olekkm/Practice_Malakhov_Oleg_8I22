@@ -18,6 +18,7 @@ class SteamparsSpider(scrapy.Spider):
             yield scrapy.Request(a.get(), callback=self.parse,
                                  cookies={"lastagecheckage": "1-0-1993", "birthtime": "723150001"})
 
+
 if __name__ == '__main__':
     from scrapy.crawler import CrawlerProcess
 
