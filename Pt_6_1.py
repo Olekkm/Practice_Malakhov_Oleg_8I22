@@ -8,8 +8,10 @@ try:
     print(f'Топ-10 треков исполнителя: {name}\n')
     for tracks in range(1, 11):
         track = soup.find('div', {"class": 'd-track', "data-id": f'{tracks}'})
-        print(tracks, " "*(2-len(str(tracks))), track.find("div", {"class": "d-track__name"})["title"])
+        print(tracks, " " * (2 - len(str(tracks))), track.find("div", {"class": "d-track__name"})["title"])
 except requests.exceptions.MissingSchema:
     print("Где-то ошибка")
 except AttributeError:
     pass
+except requests.exceptions.InvalidURL:
+    print("Где-то ошибка.2")
