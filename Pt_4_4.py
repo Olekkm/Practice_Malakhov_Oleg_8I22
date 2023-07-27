@@ -15,8 +15,7 @@ def unique(l3, sum, K, local, A):
         if (sum + A[i] > K):
             continue
 
-        if (i > l3 and
-                A[i] == A[i - 1]):
+        if (i > l3 and A[i] == A[i - 1]):
             continue
 
         local.append(A[i])
