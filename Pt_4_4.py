@@ -1,4 +1,4 @@
-def unique(l, sum, K, local, A):
+def unique(l3, sum, K, local, A):
     if sum == K:
         print("{", end="")
         for i in range(len(local)):
@@ -10,12 +10,12 @@ def unique(l, sum, K, local, A):
         print("}")
         return
 
-    for i in range(l, len(A), 1):
+    for i in range(l3, len(A), 1):
 
         if (sum + A[i] > K):
             continue
 
-        if (i > l and
+        if (i > l3 and
                 A[i] == A[i - 1]):
             continue
 
