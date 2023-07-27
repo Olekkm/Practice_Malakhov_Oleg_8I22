@@ -8,7 +8,7 @@ print("Варианты:")
 for i in arr:
     print(i)
 
-ccolor = arr[r(0, len(arr)-1)]
+ccolor = arr[r(0, len(arr) - 1)]
 color = input("\nВыберите цвет ").capitalize()
 while color != ccolor:
     print(a[ccolor])
